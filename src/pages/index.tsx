@@ -22,7 +22,7 @@ export default function HomePage() {
             A full-stack developer from Delhi, India, i love building things that are both beautiful and functional. whether it’s a slick frontend or a solid backend,i love the process of turning ideas into real, working products.
           </Text>
         <Text>
-          Lately, i’ve been learning by doing writing a lot of code, breaking things, fixing them, and getting better along the way. Freelance work and an internship taught me how to collaborate, stay curious, and build with a purpose.
+          Lately, i’ve been learning by writing a lot of code, breaking things, fixing them, and getting better along the way. Freelance work and an internship taught me how to collaborate, stay curious, and build with a purpose.
         </Text>
         <Text>
           When i’m not coding, i’m usually listening to music, exploring new tools, or geeking out over a random idea.

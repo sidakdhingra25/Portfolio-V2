@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: '',
+  siteUrl: 'https://www.sidakdhingra.in/',
   changefreq: 'monthly',
   // here is the new code
   priority: 0.8,

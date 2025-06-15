@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <UiProvider>
       <Container
         maxW={{
-          md: '3xl',
+          md: 'xl',
         }}
       >
         <Navbar />

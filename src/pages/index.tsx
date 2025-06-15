@@ -2,7 +2,7 @@
 
 import Metahead from '@/components/MetaHead'
 import { siteMap } from '@/lib/config/site-config'
-import { Box, Heading, Separator, Stack, Text } from '@chakra-ui/react'
+import { Heading, Separator, Stack, Text } from '@chakra-ui/react'
 
 export default function HomePage() {
   return (
@@ -13,55 +13,22 @@ export default function HomePage() {
         keywords={['Portfolio', 'Resume', 'ChakraFramer']}
         url={siteMap.home}
       />
-      <Stack gap={8} separator={<Separator opacity={0.2} />}>
+      <Stack separator={<Separator opacity={0.2} />}>
         <Stack>
-          <Heading as="h1" fontSize="3xl" mb={4}>
-            Sup, I'm Sidak Dhingra
+          <Heading as="h1" fontSize="3xl" mb={5}>
+            Hi, I'm Sidak Dhingra
           </Heading>
           <Text>
-            I’m a Software Engineer from Delhi, India, specializing in full-stack development. I build scalable and efficient web solutions, with a strong grasp of modern technologies. I'm adaptive, detail-oriented, and passionate about continuous learning and problem-solving.
+            A full-stack developer from Delhi, India, i love building things that are both beautiful and functional. whether it’s a slick frontend or a solid backend,i love the process of turning ideas into real, working products.
           </Text>
+        <Text>
+          Lately, i’ve worked on projects like walled, insi chat, and spotifind  covering everything from real-time messaging to ai-powered playlists. i’ve also done some freelance work and an internship, which helped me grow as a developer and a teammate.
+        </Text>
+        <Text>
+          When i’m not coding, i’m usually listening to music, exploring new tools, or geeking out over a random idea.
+        </Text>
         </Stack>
-        {chunks.map((item) => (
-          <Stack key={item.title}>
-            <Heading as="h2">{item.title}</Heading>
-            <Box>{item.content}</Box>
-          </Stack>
-        ))}
       </Stack>
     </>
   )
 }
-
-export const chunks = [
-  {
-    title: 'Professional Work',
-    content: (
-      <Stack gap={2}>
-        <Text>
-          I’ve delivered responsive, dynamic, and visually engaging interfaces using TypeScript, Next,js, React.js, Tailwind CSS, and Framer Motion, while ensuring clean code and performance optimization. From integrating Hygraph CMS to enhancing user experience with tools like Recharts and Cloudinary, my work focuses on creating real-world solutions that are both functional and elegant.
-        </Text>
-        <Text>
-          My recent professional contributions include:Studio Marici – A creative agency site built with Next.js and Tailwind CSS.FinCon Research – A finance-oriented platform featuring animated graphs and live data visualizations.FLIB – A high-performance site optimized with SEO and CMS integration.
-        </Text>
-      </Stack>
-    ),
-  },
-  {
-    title: 'Skills',
-    content: (
-      <Text>
-        I have hands-on experience with a wide range of technologies including React.js, Next.js, HTML/CSS, Tailwind CSS, TypeScript, JavaScript, and Python. On the backend, I work with Node.js, Express, MongoDB, and SQL to build robust server-side applications. I’m also proficient with tools and platforms such as Postman, Git, Vercel, and AWS. My skillset includes responsive UI development, API integration, authentication systems, and cloud-based deployments.
-      </Text>
-    ),
-  },
-  {
-    title: 'Personal Interests',
-    content: (
-      <Text>
-        Beyond work, I enjoy exploring topics in technology, reading about
-        personal development, and engaging in creative hobbies like music. I’m also passionate about learning new skills to expand my horizons.
-      </Text>
-    ),
-  },
-]

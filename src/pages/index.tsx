@@ -8,9 +8,9 @@ export default function HomePage() {
   return (
     <>
       <Metahead
-        title="Home | College Portfolio"
-        description="This is a portfolio website built using Next.js and Chakra UI by ChakraFramer Team for college students to showcase their resume, projects, and contact information."
-        keywords={['Portfolio', 'Resume', 'ChakraFramer']}
+        title="Sidak Dhingra"
+        description=" A full-stack developer from Delhi, India"
+        keywords={['Portfolio', 'Resume',  'Sidak Dhingra', 'Sidak Dhingra Portfolio', 'Sidak Dhingra Resume', 'Sidak Dhingra Projects', 'Sidak Dhingra Contact', 'Sidak Dhingra About', 'Sidak Dhingra Portfolio', 'Sidak Dhingra Resume', 'Sidak Dhingra Projects', 'Sidak Dhingra Contact', 'Sidak Dhingra About']}
         url={siteMap.home}
       />
       <Stack separator={<Separator opacity={0.2} />}>

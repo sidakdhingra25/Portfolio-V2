@@ -29,7 +29,7 @@ const Project = ({ title, description, previewUrl, gitUrl }: Project) => {
   return (
     <>
       <Metahead
-        title="Projects | College Portfolio"
+        title="Projects | Sidak Dhingra"
         description="This is a portfolio website built using Next.js and Chakra UI by ChakraFramer Team for college students to showcase their resume, projects, and contact information."
         keywords={['Portfolio', 'Resume', 'ChakraFramer']}
         url={siteMap.projects}

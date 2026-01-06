@@ -40,12 +40,16 @@ const Project = ({ title, description, previewUrl, gitUrl }: Project) => {
             {title}
           </Text>
           <HStack gap={4}>
-            <CNLink hidden={!previewUrl} href={previewUrl!} target='_blank' color={'white'}>
-              <FaLink size={'1.2rem'} />
-            </CNLink>
-            <CNLink hidden={!gitUrl} href={gitUrl!} target='_blank' color={'white'}>
-              <FaGithub size={'1.2rem'} />
-            </CNLink>
+            {previewUrl && (
+              <CNLink href={previewUrl} target='_blank' color={'white'}>
+                <FaLink size={'1.2rem'} />
+              </CNLink>
+            )}
+            {gitUrl && (
+              <CNLink href={gitUrl} target='_blank' color={'white'}>
+                <FaGithub size={'1.2rem'} />
+              </CNLink>
+            )}
           </HStack>
         </Flex>
         <Separator opacity={0.2} />
@@ -82,6 +86,12 @@ const projectData: Project[] = [
   //     'Designed and built a responsive site using Next.js, TypeScript, and Tailwind CSS to showcase creative projects. Ensured fast performance and precise design implementation.',
   //   previewUrl: 'https://www.studiomarici.in/',
   // },
+  {
+    title: 'FLIB',
+    description:
+      'Developed a high-performance marketplace website using Next.js and TypeScript, achieving a reduction in page load times by 30% through advanced SEO and lazy loading techniques. Integrated Hygraph CMS with Next.js',
+    previewUrl: 'https://www.flib.store/',
+  },  
   {
     title: 'Insi Chat',
     description:

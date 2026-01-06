@@ -19,7 +19,7 @@ export default function ResumePage() {
             My Resume📝
           </Heading>
           <CNLink
-            href="https://drive.google.com/file/d/1Bn3EbGNvXhnb9DTdlaII2uMgJJofCR_-/view?usp=sharing"
+            href="https://drive.google.com/file/d/1e5sZ9GRSBxOY0eip9Pi1B9w6D4zko8Cp/view?usp=sharing"
             border={'1px solid'}
             borderColor={'gray.500'}
             borderRadius={'sm'}
@@ -121,12 +121,24 @@ const Experience = ({
 
 const experienceData: Experience[] = [
   {
+    company: 'Quadlabs',
+    title: 'Software Engineer',
+    fromDate: 'August-2025',
+    toDate: 'Present',
+    deliverables: [
+      'Worked on 20+ third‑party and internal APIs for flights, quotations, client preferences, payments, and banners, making sure responses are handled cleanly and users always see clear error or success states.',
+      'Improved performance on heavy flight pages by adding lazy loading and other optimizations so large search results and filters feel smooth for B2B agents.',
+      'Built and refined 10+ admin features like user/client/agency management, roles and rights, supplementary profiles, preferences, frequent flyers, feedback, and banner/ads using reactive forms, ng-select, and strong validation.',
+    ],
+    website: 'https://www.quadlabs.com/'
+  },
+  {
     company: 'Fincon Research',
     title: 'Frontend Developer Freelancer',
     fromDate: 'March-2025',
     toDate: 'May-2025',
     deliverables: [
-      'Developing the FinCon Research website using Next.js and React.js to create a dynamic and interactive user experience.',
+      'Developing the FinCon Research website using React.js to create a dynamic and interactive user experience.',
       'Integrated Framer Motion for smooth animations and transitions, enhancing engagement.',
     ],
     website: 'https://www.finconresearch.com/', // Add your company website link here
@@ -137,21 +149,10 @@ const experienceData: Experience[] = [
     fromDate: 'Jan-2025',
     toDate: 'Jan-2025',
     deliverables: [
-      'Designed and developed Studio Marici using Next.js, React, TypeScript, and Tailwind CSS, crafting a high-performance website tailored to the client’s design vision for showcasing creative projects.',
+      "Designed and developed Studio Marici using React, TypeScript, and Tailwind CSS, crafting a high-performance website tailored to the client's design vision for showcasing creative projects.",
       'Implemented  a  responsive  and  interactive  UI  with  Tailwind  CSS,  ensuring  seamless  navigation  and  an  optimized  user experience while maintaining design accuracy',
     ],
     website: 'https://www.studiomarici.in/', // Add your company website link here
-  },
-  {
-    company: 'FLIB',
-    title: 'Frontend Developer Intern',
-    fromDate: 'Aug-2024',
-    toDate: 'Oct-2024',
-    deliverables: [
-      'Developed a high-performance web application using Next.js and TypeScript, achieving a reduction in page load times by 30% through advanced SEO and lazy loading techniques.',
-      'Integrated Hygraph CMS with Next.js framework to establish an efficient CMS; streamlined updates reduced publication time and improved overall site responsiveness for better user experience',
-    ],
-    website: 'https://www.flib.store/', // Add your company website link here
   },
 ]
 
@@ -198,7 +199,7 @@ export const educationData: Education[] = [
   },
   {
     degree: 'G.D Salwan Public School',
-    stream: 'Science (Physics, Chemistry, Mathematics)',
+    stream: 'Science (PCM)',
     fromDate: '',
     toDate: 'April 2021',
     location: 'Rajindar Nagar, New Delhi - 110060',

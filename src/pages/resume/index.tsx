@@ -19,7 +19,7 @@ export default function ResumePage() {
             My Resume📝
           </Heading>
           <CNLink
-            href="https://drive.google.com/file/d/1e5sZ9GRSBxOY0eip9Pi1B9w6D4zko8Cp/view?usp=sharing"
+            href="https://drive.google.com/file/d/1mbZ80ABX5y65JCJFrpClJqgy6r9qqll2/view?usp=sharing"
             border={'1px solid'}
             borderColor={'gray.500'}
             borderRadius={'sm'}

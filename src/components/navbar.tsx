@@ -14,7 +14,7 @@ export default function Navbar() {
       href: siteMap.home,
     },
     {
-      title: 'Resume',
+      title: 'Work',
       href: siteMap.resume,
     },
     {

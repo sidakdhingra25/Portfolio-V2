@@ -8,9 +8,27 @@ import { FaGithub, FaLink } from 'react-icons/fa6'
 export default function ProjectPage() {
   return (
     <Stack gap={8}>
-      <Heading as="h1" fontSize="3xl" mb={4}>
-        Projects 🚀
-      </Heading>
+      <Flex justifyContent={'space-between'}>
+        <Heading as="h1" fontSize="3xl">
+          Projects 🚀
+        </Heading>
+        <CNLink
+          href="https://drive.google.com/file/d/1mbZ80ABX5y65JCJFrpClJqgy6r9qqll2/view?usp=sharing"
+          border={'1px solid'}
+          borderColor={'gray.500'}
+          borderRadius={'sm'}
+          color={'white'}
+          target={'_blank'}
+          px={4}
+          py={0}
+          fontSize={'sm'}
+          _hover={{
+            textDecoration: 'none',
+          }}
+        >
+          Download Resume
+        </CNLink>
+      </Flex>
       {projectData.map((i) => (
         <Project key={i.title} {...i} />
       ))}
@@ -20,9 +38,24 @@ export default function ProjectPage() {
 
 type Project = {
   title: string
-  description: string
+  description: string | readonly string[]
   previewUrl?: string
   gitUrl?: string
+}
+
+const ProjectDescription = ({ description }: { description: string | readonly string[] }) => {
+  if (Array.isArray(description)) {
+    return (
+      <Stack as="ul" gap={2} pl={5}>
+        {description.map((line, i) => (
+          <Text as="li" key={i} display="list-item">
+            {line}
+          </Text>
+        ))}
+      </Stack>
+    )
+  }
+  return <Text>{description}</Text>
 }
 
 const Project = ({ title, description, previewUrl, gitUrl }: Project) => {
@@ -53,13 +86,31 @@ const Project = ({ title, description, previewUrl, gitUrl }: Project) => {
           </HStack>
         </Flex>
         <Separator opacity={0.2} />
-        <Text>{description}</Text>
+        <ProjectDescription description={description} />
       </Stack>
     </>
   )
 }
 
 const projectData: Project[] = [
+  {
+    title: 'Schelo',
+    description: [
+      'Built a TypeScript + Zod-based runtime API validation package with fetch interception, schema enforcement, and real-time error reporting.',
+      'Designed route-based validation and CLI tooling, improving API reliability, debugging, and developer experience in React/Next.js apps.',
+    ],
+    previewUrl: 'https://schelo.xyz/',
+    gitUrl: 'https://github.com/sidakdhingra25/schelo',
+  },
+  {
+    title: 'Pageo',
+    description: [
+      'Built a scalable all-in-one link management platform using Next.js, TypeScript, Tailwind CSS, Drizzle ORM, and PostgreSQL (NeonDB).',
+      'Implemented authentication, analytics tracking, custom domains, and third-party integrations (Google Analytics, YouTube, GitHub, Instagram, Dribbble).',
+      'Scaled to 100+ active users by continuously shipping features and improving UX, performance, and DX.',
+    ],
+    previewUrl: 'https://www.pageo.me',
+  },
   {
     title: 'Walled',
     description:

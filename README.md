@@ -9,7 +9,7 @@
 ## Clone and run
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/sidakdhingra25/Portfolio-V2
 cd portfolio-new
 npm install
 npm run dev

@@ -104,20 +104,15 @@ const Project = ({ title, description, previewUrl, gitUrl }: Project) => {
 const projectData: Project[] = [
   {
     title: 'Schelo',
-    description: [
+    description:
       'Built a TypeScript + Zod-based runtime API validation package with fetch interception, schema enforcement, and real-time error reporting.',
-      'Designed route-based validation and CLI tooling, improving API reliability, debugging, and developer experience in React/Next.js apps.',
-    ],
     previewUrl: 'https://schelo.xyz/',
     gitUrl: 'https://github.com/sidakdhingra25/schelo',
   },
   {
     title: 'Pageo',
-    description: [
+    description:
       'Built a scalable all-in-one link management platform using Next.js, TypeScript, Tailwind CSS, Drizzle ORM, and PostgreSQL (NeonDB).',
-      'Implemented authentication, analytics tracking, custom domains, and third-party integrations (Google Analytics, YouTube, GitHub, Instagram, Dribbble).',
-      'Scaled to 100+ active users by continuously shipping features and improving UX, performance, and DX.',
-    ],
     previewUrl: 'https://www.pageo.me',
   },
   {

@@ -25,7 +25,6 @@ export default function ContactPage() {
           </Heading>
           <CNLink
             width={'fit-content'}
-            _focus={{ outline: 'none', boxShadow: 'none' }}
             display={'flex'}
             href={siteMap.mailTo}
             target="_blank"
@@ -41,7 +40,6 @@ export default function ContactPage() {
           </Heading>
           <CNLink
             width={'fit-content'}
-            _focus={{ outline: 'none', boxShadow: 'none' }}
             display={'flex'}
             href="https://calendly.com/sidakdhingra73/30min"
             target="_blank"

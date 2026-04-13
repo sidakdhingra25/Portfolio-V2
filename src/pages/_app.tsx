@@ -1,7 +1,5 @@
-
-
 import Navbar from '@/components/navbar'
-import Footer from '@/components/ui/footer'
+import StaggeredFooter from '@/components/ui/staggered-footer'
 import { UiProvider } from '@/components/ui/ui-provider'
 import { Container } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
@@ -14,11 +12,13 @@ export default function App({ Component, pageProps }: AppProps) {
         maxW={{
           md: 'xl',
         }}
+        px={{ base: 4, sm: 6 }}
+        w="full"
       >
         <Navbar />
         <Component {...pageProps} />
         <Analytics />
-        <Footer />
+        <StaggeredFooter />
       </Container>
     </UiProvider>
   )

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.sidakdhingra.in/
+Host: https://www.sidak.work/
 
 # Sitemaps
-Sitemap: https://www.sidakdhingra.in/sitemap.xml
+Sitemap: https://www.sidak.work/sitemap.xml

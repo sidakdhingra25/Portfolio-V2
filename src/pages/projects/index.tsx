@@ -8,20 +8,29 @@ import { FaGithub, FaLink } from 'react-icons/fa6'
 export default function ProjectPage() {
   return (
     <Stack gap={8}>
-      <Flex justifyContent={'space-between'}>
-        <Heading as="h1" fontSize="3xl">
+      <Flex
+        justifyContent={'space-between'}
+        alignItems={{ base: 'flex-start', sm: 'center' }}
+        flexDirection={{ base: 'column', sm: 'row' }}
+        gap={{ base: 4, sm: 0 }}
+        flexWrap="wrap"
+      >
+        <Heading as="h1" fontSize={{ base: '2xl', sm: '3xl' }}>
           Projects 🚀
         </Heading>
         <CNLink
-          href="https://drive.google.com/file/d/1mbZ80ABX5y65JCJFrpClJqgy6r9qqll2/view?usp=sharing"
+          href="https://drive.google.com/file/d/1QM_zT936-oKHq_y_j5Yg7dskN_yLpJ7W/view?usp=sharing"
           border={'1px solid'}
           borderColor={'gray.500'}
           borderRadius={'sm'}
           color={'white'}
           target={'_blank'}
           px={4}
-          py={0}
+          py={2}
           fontSize={'sm'}
+          alignSelf={{ base: 'stretch', sm: 'auto' }}
+          textAlign="center"
+          whiteSpace={{ base: 'normal', sm: 'nowrap' }}
           _hover={{
             textDecoration: 'none',
           }}

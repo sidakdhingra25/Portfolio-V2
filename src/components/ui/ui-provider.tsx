@@ -32,26 +32,20 @@ const styleSystem = createSystem(defaultConfig, {
       lineHeight: '1.5',
       scrollBehavior: 'smooth',
     },
+    '*': {
+      scrollbarWidth: 'none',
+    },
+    '*::-webkit-scrollbar': {
+      display: 'none',
+    },
     'h1, h2, h3, h4': {
       color: 'white',
     },
-    '::-webkit-scrollbar': {
-      width: '10px',
-      zIndex: '1',
-    },
-    /* Track */
-    '::-webkit-scrollbar-track': {
-      bg: 'gray.950',
-    },
-    /* Handle */
-    '::-webkit-scrollbar-thumb': {
-      bg: 'gray.700',
-      borderRadius: '10px',
-    },
-    /* Handle on hover */
-    '::-webkit-scrollbar-thumb:hover': {
-      bg: 'white',
-    },
+    'a:focus, a:focus-visible, button:focus, button:focus-visible, [role="button"]:focus, [role="button"]:focus-visible':
+      {
+        outline: 'none',
+        boxShadow: 'none',
+      },
   },
   theme: {
     tokens: {

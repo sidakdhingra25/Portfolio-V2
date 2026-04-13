@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://www.sidakdhingra.in/',
+  siteUrl: 'https://www.sidak.work/',
   changefreq: 'monthly',
 
   priority: 0.8,

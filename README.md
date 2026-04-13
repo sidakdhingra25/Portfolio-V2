@@ -1,4 +1,3 @@
-# Portfolio - https://sidak.work/
 
 ## Tech stack
 

@@ -7,7 +7,7 @@ export const siteMap = {
 } as const
 
 /** Canonical site origin (no trailing slash) — matches sitemap / production host. */
-export const siteUrl = 'https://www.sidak.work'
+export const siteUrl = 'https://sidak.work'
 
 /** Public path to default Open Graph image (`public/og.png`). */
 export const ogImagePath = '/og.png'

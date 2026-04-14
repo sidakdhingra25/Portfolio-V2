@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.sidak.work/
+Host: https://sidak.work/
 
 # Sitemaps
-Sitemap: https://www.sidak.work/sitemap.xml
+Sitemap: https://sidak.work/sitemap.xml
